@@ -8,9 +8,7 @@ double calculate_total_travel_distance(std::vector<Point> const& cities)
     }
     double summed_travel_distance = 0.0;
     for (auto i = 1U; i != cities.size(); ++i) {
-        auto const p1 = cities.at(i - 1);
-        auto const p2 = cities.at(i);
-        summed_travel_distance += calculate_distance(p1, p2);
+        summed_travel_distance += calculate_distance(cities.at(i - 1), cities.at(i));
     }
 
     return summed_travel_distance;
