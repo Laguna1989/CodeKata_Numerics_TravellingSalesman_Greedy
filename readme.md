@@ -25,7 +25,7 @@ Details:
 A greedy algorithm is one of the simplest ways to solve the problem. Most likely, it will not find the optimal solution
 for a given set of cities.
 
-The greedy solution starts at a random city. In every step, the algorithm searches for the nearest neighbor city that
+The greedy solution starts at the first city in the list. In every step, the algorithm searches for the nearest neighbor city that
 has not yet been visited and chooses this city as the next travelling destination.
 
 # Exercise
