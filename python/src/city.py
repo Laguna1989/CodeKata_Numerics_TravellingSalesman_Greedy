@@ -9,3 +9,7 @@ class City:
 
 def compute_distance(cityA: City, cityB: City):
     return sqrt((cityA.x - cityB.x) ** 2 + (cityA.y - cityB.y) ** 2)
+
+
+def create_cities(amount: int):
+    return [City(0.0, 0.0)] * amount
