@@ -18,8 +18,16 @@ def compute_distance(cityA: City, cityB: City):
     return sqrt((cityA.x - cityB.x) ** 2 + (cityA.y - cityB.y) ** 2)
 
 
-def create_cities(amount: int, rng=random):
+def create_cities(amount: int):
     cities = []
     for i in range(amount):
-        cities.append(City(rng(), rng()))
+        cities.append(City(random(), random()))
     return cities
+
+
+def calculate_total_path_length(cities):
+    distance_sum = 0.0
+    for i in range(1, len(cities)):
+        distance_sum += compute_distance(cities[i - 1], cities[i])
+
+    return distance_sum
