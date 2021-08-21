@@ -1,6 +1,6 @@
 import pytest
 
-from city import create_cities
+from create_cities import create_cities
 
 import random
 

@@ -1,4 +1,4 @@
-from city import compute_distance
+from calculate_distance import calculate_distance
 
 
 def find_greedy_path(cities):
@@ -9,7 +9,7 @@ def find_greedy_path(cities):
         best_distance = 2.0
         best_index = -1
         for i, city in enumerate(remaining_cities):
-            distance = compute_distance(city, current_city)
+            distance = calculate_distance(city, current_city)
             if distance < best_distance:
                 best_distance = distance
                 best_index = i
